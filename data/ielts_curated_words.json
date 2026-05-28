@@ -1,0 +1,758 @@
+[
+  {
+    "word": "mitigate",
+    "phonetic": "/ˈmɪtɪɡeɪt/",
+    "pos": "v.",
+    "meaning": "减轻，缓和",
+    "english": "to make something less harmful, serious, or painful",
+    "example": "Urban planners can mitigate congestion by improving public transport.",
+    "exampleCn": "城市规划者可以通过改善公共交通来缓解拥堵。",
+    "collocations": [
+      "mitigate risk",
+      "mitigate the impact",
+      "mitigating measures"
+    ],
+    "synonyms": [
+      "alleviate",
+      "ease",
+      "reduce"
+    ],
+    "topic": "城市与交通",
+    "level": "高频"
+  },
+  {
+    "word": "substantial",
+    "phonetic": "/səbˈstænʃl/",
+    "pos": "adj.",
+    "meaning": "大量的，重大的",
+    "english": "large in amount, value, or importance",
+    "example": "There is substantial evidence that regular exercise improves cognition.",
+    "exampleCn": "有大量证据表明规律运动可以改善认知。",
+    "collocations": [
+      "substantial evidence",
+      "substantial increase",
+      "substantial benefits"
+    ],
+    "synonyms": [
+      "considerable",
+      "significant",
+      "major"
+    ],
+    "topic": "数据与论证",
+    "level": "基础"
+  },
+  {
+    "word": "detrimental",
+    "phonetic": "/ˌdetrɪˈmentl/",
+    "pos": "adj.",
+    "meaning": "有害的，不利的",
+    "english": "causing harm or damage",
+    "example": "Excessive screen time may be detrimental to children’s sleep quality.",
+    "exampleCn": "过多屏幕时间可能不利于儿童睡眠质量。",
+    "collocations": [
+      "detrimental effect",
+      "detrimental to health",
+      "prove detrimental"
+    ],
+    "synonyms": [
+      "harmful",
+      "damaging",
+      "adverse"
+    ],
+    "topic": "健康与教育",
+    "level": "高频"
+  },
+  {
+    "word": "proliferation",
+    "phonetic": "/prəˌlɪfəˈreɪʃn/",
+    "pos": "n.",
+    "meaning": "激增，扩散",
+    "english": "a rapid increase in the number or amount of something",
+    "example": "The proliferation of online courses has changed access to education.",
+    "exampleCn": "在线课程的激增改变了人们获得教育的方式。",
+    "collocations": [
+      "rapid proliferation",
+      "proliferation of media",
+      "digital proliferation"
+    ],
+    "synonyms": [
+      "expansion",
+      "growth",
+      "spread"
+    ],
+    "topic": "科技与社会",
+    "level": "进阶"
+  },
+  {
+    "word": "plausible",
+    "phonetic": "/ˈplɔːzəbl/",
+    "pos": "adj.",
+    "meaning": "貌似合理的，可信的",
+    "english": "seeming reasonable or likely to be true",
+    "example": "A plausible explanation is that higher wages attract skilled workers.",
+    "exampleCn": "一个合理解释是，更高工资会吸引熟练工人。",
+    "collocations": [
+      "plausible explanation",
+      "plausible argument",
+      "sound plausible"
+    ],
+    "synonyms": [
+      "credible",
+      "reasonable",
+      "believable"
+    ],
+    "topic": "学术表达",
+    "level": "高频"
+  },
+  {
+    "word": "allocate",
+    "phonetic": "/ˈæləkeɪt/",
+    "pos": "v.",
+    "meaning": "分配，拨出",
+    "english": "to give something officially to a person or purpose",
+    "example": "Governments should allocate more funding to preventive healthcare.",
+    "exampleCn": "政府应向预防性医疗分配更多资金。",
+    "collocations": [
+      "allocate resources",
+      "allocate funding",
+      "allocate time"
+    ],
+    "synonyms": [
+      "assign",
+      "distribute",
+      "apportion"
+    ],
+    "topic": "政府与政策",
+    "level": "基础"
+  },
+  {
+    "word": "resilient",
+    "phonetic": "/rɪˈzɪliənt/",
+    "pos": "adj.",
+    "meaning": "有复原力的，适应力强的",
+    "english": "able to recover quickly after difficulties",
+    "example": "Resilient communities are better prepared for climate-related disasters.",
+    "exampleCn": "有韧性的社区能更好地应对气候相关灾害。",
+    "collocations": [
+      "resilient economy",
+      "resilient communities",
+      "emotionally resilient"
+    ],
+    "synonyms": [
+      "adaptable",
+      "robust",
+      "tough"
+    ],
+    "topic": "环境与社会",
+    "level": "进阶"
+  },
+  {
+    "word": "incentive",
+    "phonetic": "/ɪnˈsentɪv/",
+    "pos": "n.",
+    "meaning": "激励，诱因",
+    "english": "something that encourages a person to do something",
+    "example": "Tax incentives can encourage companies to adopt cleaner technologies.",
+    "exampleCn": "税收激励可以鼓励企业采用更清洁的技术。",
+    "collocations": [
+      "financial incentive",
+      "strong incentive",
+      "provide incentives"
+    ],
+    "synonyms": [
+      "motivation",
+      "stimulus",
+      "encouragement"
+    ],
+    "topic": "经济与环境",
+    "level": "基础"
+  },
+  {
+    "word": "scrutinise",
+    "phonetic": "/ˈskruːtənaɪz/",
+    "pos": "v.",
+    "meaning": "仔细检查，审视",
+    "english": "to examine something very carefully",
+    "example": "Researchers must scrutinise the data before drawing conclusions.",
+    "exampleCn": "研究者在得出结论前必须仔细审视数据。",
+    "collocations": [
+      "scrutinise data",
+      "scrutinise policies",
+      "closely scrutinise"
+    ],
+    "synonyms": [
+      "inspect",
+      "examine",
+      "analyse"
+    ],
+    "topic": "研究与数据",
+    "level": "进阶"
+  },
+  {
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "pos": "adj.",
+    "meaning": "无处不在的",
+    "english": "seeming to be everywhere",
+    "example": "Smartphones have become ubiquitous in modern life.",
+    "exampleCn": "智能手机在现代生活中已经无处不在。",
+    "collocations": [
+      "ubiquitous technology",
+      "become ubiquitous",
+      "ubiquitous presence"
+    ],
+    "synonyms": [
+      "pervasive",
+      "omnipresent",
+      "universal"
+    ],
+    "topic": "科技与生活",
+    "level": "高频"
+  },
+  {
+    "word": "contemplate",
+    "phonetic": "/ˈkɒntəmpleɪt/",
+    "pos": "v.",
+    "meaning": "考虑，深思",
+    "english": "to think about whether to do something",
+    "example": "Many graduates contemplate working abroad to broaden their horizons.",
+    "exampleCn": "许多毕业生会考虑出国工作以拓宽视野。",
+    "collocations": [
+      "contemplate a career",
+      "contemplate change",
+      "seriously contemplate"
+    ],
+    "synonyms": [
+      "consider",
+      "ponder",
+      "reflect on"
+    ],
+    "topic": "工作与人生",
+    "level": "基础"
+  },
+  {
+    "word": "disparity",
+    "phonetic": "/dɪˈspærəti/",
+    "pos": "n.",
+    "meaning": "差距，悬殊",
+    "english": "a noticeable difference between things",
+    "example": "The income disparity between urban and rural areas remains a concern.",
+    "exampleCn": "城乡收入差距仍然令人担忧。",
+    "collocations": [
+      "income disparity",
+      "regional disparity",
+      "reduce disparities"
+    ],
+    "synonyms": [
+      "gap",
+      "inequality",
+      "imbalance"
+    ],
+    "topic": "社会公平",
+    "level": "高频"
+  },
+  {
+    "word": "sustainable",
+    "phonetic": "/səˈsteɪnəbl/",
+    "pos": "adj.",
+    "meaning": "可持续的",
+    "english": "able to continue over time without damaging resources",
+    "example": "Cities need sustainable transport systems to reduce emissions.",
+    "exampleCn": "城市需要可持续交通系统来减少排放。",
+    "collocations": [
+      "sustainable development",
+      "sustainable energy",
+      "sustainable growth"
+    ],
+    "synonyms": [
+      "renewable",
+      "viable",
+      "enduring"
+    ],
+    "topic": "环境与能源",
+    "level": "基础"
+  },
+  {
+    "word": "comprehensive",
+    "phonetic": "/ˌkɒmprɪˈhensɪv/",
+    "pos": "adj.",
+    "meaning": "全面的，综合的",
+    "english": "including all or almost all details or facts",
+    "example": "A comprehensive policy should address both cost and accessibility.",
+    "exampleCn": "一项全面政策应同时解决成本和可及性。",
+    "collocations": [
+      "comprehensive approach",
+      "comprehensive review",
+      "comprehensive reform"
+    ],
+    "synonyms": [
+      "thorough",
+      "complete",
+      "extensive"
+    ],
+    "topic": "学术表达",
+    "level": "高频"
+  },
+  {
+    "word": "inevitable",
+    "phonetic": "/ɪnˈevɪtəbl/",
+    "pos": "adj.",
+    "meaning": "不可避免的",
+    "english": "certain to happen and impossible to avoid",
+    "example": "Automation makes some changes in the labour market inevitable.",
+    "exampleCn": "自动化使劳动力市场的一些变化不可避免。",
+    "collocations": [
+      "inevitable consequence",
+      "seem inevitable",
+      "almost inevitable"
+    ],
+    "synonyms": [
+      "unavoidable",
+      "inescapable",
+      "certain"
+    ],
+    "topic": "科技与工作",
+    "level": "基础"
+  },
+  {
+    "word": "innovation",
+    "phonetic": "/ˌɪnəˈveɪʃn/",
+    "pos": "n.",
+    "meaning": "创新",
+    "english": "a new idea, method, or product",
+    "example": "Technological innovation can improve productivity across industries.",
+    "exampleCn": "技术创新可以提高各行业的生产率。",
+    "collocations": [
+      "drive innovation",
+      "technological innovation",
+      "innovation policy"
+    ],
+    "synonyms": [
+      "invention",
+      "novelty",
+      "breakthrough"
+    ],
+    "topic": "科技与经济",
+    "level": "基础"
+  },
+  {
+    "word": "regulate",
+    "phonetic": "/ˈreɡjuleɪt/",
+    "pos": "v.",
+    "meaning": "监管，调节",
+    "english": "to control an activity by rules or laws",
+    "example": "Governments should regulate advertising aimed at children.",
+    "exampleCn": "政府应监管面向儿童的广告。",
+    "collocations": [
+      "regulate industry",
+      "strictly regulate",
+      "regulate behaviour"
+    ],
+    "synonyms": [
+      "control",
+      "govern",
+      "supervise"
+    ],
+    "topic": "政府与媒体",
+    "level": "高频"
+  },
+  {
+    "word": "adolescent",
+    "phonetic": "/ˌædəˈlesnt/",
+    "pos": "n./adj.",
+    "meaning": "青少年；青春期的",
+    "english": "a young person who is developing into an adult",
+    "example": "Adolescents are particularly vulnerable to peer pressure.",
+    "exampleCn": "青少年尤其容易受到同伴压力影响。",
+    "collocations": [
+      "adolescent behaviour",
+      "adolescent health",
+      "young adolescents"
+    ],
+    "synonyms": [
+      "teenager",
+      "youth",
+      "juvenile"
+    ],
+    "topic": "教育与成长",
+    "level": "基础"
+  },
+  {
+    "word": "attain",
+    "phonetic": "/əˈteɪn/",
+    "pos": "v.",
+    "meaning": "获得，达到",
+    "english": "to succeed in achieving something",
+    "example": "Students need clear goals to attain a higher level of proficiency.",
+    "exampleCn": "学生需要明确目标才能达到更高熟练度。",
+    "collocations": [
+      "attain a goal",
+      "attain proficiency",
+      "attain success"
+    ],
+    "synonyms": [
+      "achieve",
+      "reach",
+      "obtain"
+    ],
+    "topic": "教育与学习",
+    "level": "基础"
+  },
+  {
+    "word": "constraint",
+    "phonetic": "/kənˈstreɪnt/",
+    "pos": "n.",
+    "meaning": "限制，约束",
+    "english": "something that limits what can be done",
+    "example": "Budget constraints often affect public services.",
+    "exampleCn": "预算限制常常影响公共服务。",
+    "collocations": [
+      "financial constraint",
+      "time constraint",
+      "major constraint"
+    ],
+    "synonyms": [
+      "restriction",
+      "limitation",
+      "barrier"
+    ],
+    "topic": "政府与经济",
+    "level": "高频"
+  },
+  {
+    "word": "controversial",
+    "phonetic": "/ˌkɒntrəˈvɜːʃl/",
+    "pos": "adj.",
+    "meaning": "有争议的",
+    "english": "causing strong disagreement",
+    "example": "The use of animals in research remains controversial.",
+    "exampleCn": "在研究中使用动物仍然存在争议。",
+    "collocations": [
+      "highly controversial",
+      "controversial issue",
+      "controversial policy"
+    ],
+    "synonyms": [
+      "debatable",
+      "disputed",
+      "contentious"
+    ],
+    "topic": "伦理与科学",
+    "level": "高频"
+  },
+  {
+    "word": "emission",
+    "phonetic": "/ɪˈmɪʃn/",
+    "pos": "n.",
+    "meaning": "排放物，排放",
+    "english": "the production or release of gas, heat, or light",
+    "example": "Reducing carbon emissions is central to climate policy.",
+    "exampleCn": "减少碳排放是气候政策的核心。",
+    "collocations": [
+      "carbon emissions",
+      "vehicle emissions",
+      "reduce emissions"
+    ],
+    "synonyms": [
+      "discharge",
+      "release",
+      "pollution"
+    ],
+    "topic": "环境与能源",
+    "level": "基础"
+  },
+  {
+    "word": "feasible",
+    "phonetic": "/ˈfiːzəbl/",
+    "pos": "adj.",
+    "meaning": "可行的",
+    "english": "possible and practical to do",
+    "example": "A four-day working week may be feasible in some sectors.",
+    "exampleCn": "四天工作制在一些行业可能是可行的。",
+    "collocations": [
+      "feasible solution",
+      "economically feasible",
+      "technically feasible"
+    ],
+    "synonyms": [
+      "practical",
+      "workable",
+      "viable"
+    ],
+    "topic": "工作与政策",
+    "level": "高频"
+  },
+  {
+    "word": "infrastructure",
+    "phonetic": "/ˈɪnfrəstrʌktʃə/",
+    "pos": "n.",
+    "meaning": "基础设施",
+    "english": "basic systems and services needed by a country or organization",
+    "example": "Reliable infrastructure is essential for economic growth.",
+    "exampleCn": "可靠的基础设施对经济增长至关重要。",
+    "collocations": [
+      "transport infrastructure",
+      "digital infrastructure",
+      "invest in infrastructure"
+    ],
+    "synonyms": [
+      "facilities",
+      "systems",
+      "framework"
+    ],
+    "topic": "城市与经济",
+    "level": "基础"
+  },
+  {
+    "word": "legislation",
+    "phonetic": "/ˌledʒɪsˈleɪʃn/",
+    "pos": "n.",
+    "meaning": "法律，法规",
+    "english": "a law or set of laws",
+    "example": "New legislation may be needed to protect online privacy.",
+    "exampleCn": "可能需要新法规来保护网络隐私。",
+    "collocations": [
+      "introduce legislation",
+      "strict legislation",
+      "environmental legislation"
+    ],
+    "synonyms": [
+      "law",
+      "regulation",
+      "statute"
+    ],
+    "topic": "政府与法律",
+    "level": "高频"
+  },
+  {
+    "word": "notion",
+    "phonetic": "/ˈnəʊʃn/",
+    "pos": "n.",
+    "meaning": "观念，想法",
+    "english": "an idea, belief, or understanding of something",
+    "example": "The notion that success depends only on talent is misleading.",
+    "exampleCn": "成功只取决于天赋这一观念具有误导性。",
+    "collocations": [
+      "common notion",
+      "traditional notion",
+      "challenge the notion"
+    ],
+    "synonyms": [
+      "idea",
+      "concept",
+      "belief"
+    ],
+    "topic": "学术表达",
+    "level": "基础"
+  },
+  {
+    "word": "priority",
+    "phonetic": "/praɪˈɒrəti/",
+    "pos": "n.",
+    "meaning": "优先事项",
+    "english": "something important that must be dealt with first",
+    "example": "Public health should be a priority for local authorities.",
+    "exampleCn": "公共卫生应是地方政府的优先事项。",
+    "collocations": [
+      "top priority",
+      "policy priority",
+      "give priority to"
+    ],
+    "synonyms": [
+      "precedence",
+      "importance",
+      "preference"
+    ],
+    "topic": "政府与社会",
+    "level": "基础"
+  },
+  {
+    "word": "profound",
+    "phonetic": "/prəˈfaʊnd/",
+    "pos": "adj.",
+    "meaning": "深远的，重大的",
+    "english": "having a strong influence or effect",
+    "example": "The internet has had a profound impact on communication.",
+    "exampleCn": "互联网对交流产生了深远影响。",
+    "collocations": [
+      "profound impact",
+      "profound change",
+      "profound effect"
+    ],
+    "synonyms": [
+      "deep",
+      "significant",
+      "far-reaching"
+    ],
+    "topic": "科技与社会",
+    "level": "高频"
+  },
+  {
+    "word": "retain",
+    "phonetic": "/rɪˈteɪn/",
+    "pos": "v.",
+    "meaning": "保留，保持",
+    "english": "to keep something or continue to have it",
+    "example": "Companies must retain skilled employees in competitive markets.",
+    "exampleCn": "企业必须在竞争激烈的市场中留住熟练员工。",
+    "collocations": [
+      "retain talent",
+      "retain information",
+      "retain control"
+    ],
+    "synonyms": [
+      "keep",
+      "preserve",
+      "maintain"
+    ],
+    "topic": "工作与管理",
+    "level": "基础"
+  },
+  {
+    "word": "scarce",
+    "phonetic": "/skeəs/",
+    "pos": "adj.",
+    "meaning": "稀缺的，不足的",
+    "english": "not easy to find or get",
+    "example": "Water is becoming increasingly scarce in some regions.",
+    "exampleCn": "在一些地区，水资源正变得越来越稀缺。",
+    "collocations": [
+      "scarce resources",
+      "increasingly scarce",
+      "scarce supply"
+    ],
+    "synonyms": [
+      "limited",
+      "rare",
+      "insufficient"
+    ],
+    "topic": "环境与资源",
+    "level": "高频"
+  },
+  {
+    "word": "supplement",
+    "phonetic": "/ˈsʌplɪment/",
+    "pos": "v./n.",
+    "meaning": "补充；补充物",
+    "english": "to add something to improve or complete it",
+    "example": "Online materials can supplement classroom teaching.",
+    "exampleCn": "在线材料可以补充课堂教学。",
+    "collocations": [
+      "supplement income",
+      "dietary supplement",
+      "supplement teaching"
+    ],
+    "synonyms": [
+      "add to",
+      "complement",
+      "enhance"
+    ],
+    "topic": "教育与健康",
+    "level": "基础"
+  },
+  {
+    "word": "tangible",
+    "phonetic": "/ˈtændʒəbl/",
+    "pos": "adj.",
+    "meaning": "实际的，明确的",
+    "english": "real and able to be shown or measured",
+    "example": "Volunteering can bring tangible benefits to local communities.",
+    "exampleCn": "志愿服务能给当地社区带来实际好处。",
+    "collocations": [
+      "tangible benefits",
+      "tangible evidence",
+      "tangible results"
+    ],
+    "synonyms": [
+      "concrete",
+      "measurable",
+      "real"
+    ],
+    "topic": "社会与社区",
+    "level": "进阶"
+  },
+  {
+    "word": "transition",
+    "phonetic": "/trænˈzɪʃn/",
+    "pos": "n.",
+    "meaning": "转变，过渡",
+    "english": "a change from one state or system to another",
+    "example": "The transition to renewable energy requires long-term investment.",
+    "exampleCn": "向可再生能源转型需要长期投资。",
+    "collocations": [
+      "energy transition",
+      "smooth transition",
+      "transition period"
+    ],
+    "synonyms": [
+      "shift",
+      "change",
+      "conversion"
+    ],
+    "topic": "环境与能源",
+    "level": "高频"
+  },
+  {
+    "word": "valid",
+    "phonetic": "/ˈvælɪd/",
+    "pos": "adj.",
+    "meaning": "有效的，合理的",
+    "english": "based on truth or reason",
+    "example": "The survey results are valid only if the sample is representative.",
+    "exampleCn": "只有样本具有代表性时，调查结果才有效。",
+    "collocations": [
+      "valid argument",
+      "valid reason",
+      "valid data"
+    ],
+    "synonyms": [
+      "sound",
+      "reasonable",
+      "legitimate"
+    ],
+    "topic": "研究与数据",
+    "level": "基础"
+  },
+  {
+    "word": "violate",
+    "phonetic": "/ˈvaɪəleɪt/",
+    "pos": "v.",
+    "meaning": "违反，侵犯",
+    "english": "to break a rule, law, or agreement",
+    "example": "Sharing personal data without consent may violate privacy laws.",
+    "exampleCn": "未经同意分享个人数据可能违反隐私法。",
+    "collocations": [
+      "violate rights",
+      "violate rules",
+      "violate privacy"
+    ],
+    "synonyms": [
+      "breach",
+      "infringe",
+      "break"
+    ],
+    "topic": "法律与隐私",
+    "level": "高频"
+  },
+  {
+    "word": "whereas",
+    "phonetic": "/ˌweərˈæz/",
+    "pos": "conj.",
+    "meaning": "然而，而",
+    "english": "used to compare two different facts or ideas",
+    "example": "Some people prefer city life, whereas others value rural peace.",
+    "exampleCn": "一些人喜欢城市生活，而另一些人重视乡村宁静。",
+    "collocations": [
+      "whereas others",
+      "whereas in contrast",
+      "whereas many"
+    ],
+    "synonyms": [
+      "while",
+      "although",
+      "in contrast"
+    ],
+    "topic": "写作连接词",
+    "level": "基础"
+  }
+]

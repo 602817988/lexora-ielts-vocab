@@ -1,0 +1,13 @@
+{
+  "name": "Lexora IELTS",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
+  "forwardPorts": [4174, 5432],
+  "portsAttributes": {
+    "4174": {
+      "label": "Lexora IELTS",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}

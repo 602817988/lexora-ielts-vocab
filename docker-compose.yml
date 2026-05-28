@@ -1,0 +1,34 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: codex
+      POSTGRES_PASSWORD: codex
+      POSTGRES_DB: codex_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U codex -d codex_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build: .
+    environment:
+      API_PORT: 4174
+      PGHOST: db
+      PGPORT: 5432
+      PGUSER: codex
+      PGPASSWORD: codex
+      PGDATABASE: codex_dev
+    ports:
+      - "4174:4174"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres-data:
