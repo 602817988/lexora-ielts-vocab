@@ -10,6 +10,16 @@
 - 桌面和移动端响应式界面
 - 支持 Docker Compose 一键运行
 
+## GitHub Pages
+
+访问静态版：
+
+```text
+https://602817988.github.io/lexora-ielts-vocab/
+```
+
+GitHub Pages 不能运行 Node API 或 PostgreSQL，因此线上静态版会自动使用内置 5227 词库，并把用户信息和学习进度保存到当前浏览器。Docker/本地运行仍然使用 PostgreSQL。
+
 ## Local Run
 
 先启动 PostgreSQL，或直接使用仓库自带 Compose：

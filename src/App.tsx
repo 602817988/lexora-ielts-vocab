@@ -61,8 +61,15 @@ type BootstrapPayload = {
   words: Word[];
 };
 
+type StaticWord = Omit<Word, 'id' | 'progress'>;
+type ProgressMap = Record<string, Progress>;
+type DataMode = 'api' | 'static';
+
 const filters = ['全部', '基础', '高频', '进阶'] as const;
 const emptyProgress: Progress = { status: 'new', seen: 0, correct: 0, lastSeen: '' };
+const defaultUser: User = { id: 1, name: 'IELTS Learner', targetBand: '7.0', dailyTarget: 12 };
+const staticUserKey = 'lexora-static-user';
+const staticProgressKey = 'lexora-static-progress';
 
 async function request<T>(url: string, options?: RequestInit): Promise<T> {
   const response = await fetch(url, {
@@ -89,18 +96,25 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [savingUser, setSavingUser] = useState(false);
   const [error, setError] = useState('');
+  const [dataMode, setDataMode] = useState<DataMode>('api');
 
   async function loadData() {
     setLoading(true);
     setError('');
     try {
       const payload = await request<BootstrapPayload>('/api/bootstrap');
+      setDataMode('api');
       setUser(payload.user);
       setDraftUser(payload.user);
       setWords(payload.words);
       setActiveId((current) => current ?? payload.words[0]?.id ?? null);
     } catch (event) {
-      setError(event instanceof Error ? event.message : '无法连接本地数据库服务');
+      const payload = await loadStaticBootstrap();
+      setDataMode('static');
+      setUser(payload.user);
+      setDraftUser(payload.user);
+      setWords(payload.words);
+      setActiveId((current) => current ?? payload.words[0]?.id ?? null);
     } finally {
       setLoading(false);
     }
@@ -166,6 +180,12 @@ function App() {
     );
     setFlipped(false);
 
+    if (dataMode === 'static') {
+      saveStaticProgress(active.word, nextProgress);
+      setTimeout(() => move(1), 120);
+      return;
+    }
+
     try {
       const payload = await request<{ progress: Progress }>('/api/progress', {
         method: 'POST',
@@ -176,19 +196,32 @@ function App() {
       );
       setTimeout(() => move(1), 120);
     } catch (event) {
-      setWords(previous);
-      setError(event instanceof Error ? event.message : '保存学习进度失败');
+      saveStaticProgress(active.word, nextProgress);
+      setDataMode('static');
+      setError('后端暂不可用，已切换为浏览器本地保存模式。');
+      setTimeout(() => move(1), 120);
     }
   }
 
   async function resetProgress() {
     setError('');
+    if (dataMode === 'static') {
+      localStorage.removeItem(staticProgressKey);
+      setWords((current) => current.map((word) => ({ ...word, progress: emptyProgress })));
+      setFlipped(false);
+      return;
+    }
+
     try {
       await request<{ ok: true }>('/api/progress/reset', { method: 'POST' });
       setWords((current) => current.map((word) => ({ ...word, progress: emptyProgress })));
       setFlipped(false);
     } catch (event) {
-      setError(event instanceof Error ? event.message : '重置失败');
+      localStorage.removeItem(staticProgressKey);
+      setDataMode('static');
+      setWords((current) => current.map((word) => ({ ...word, progress: emptyProgress })));
+      setFlipped(false);
+      setError('后端暂不可用，已在浏览器本地重置进度。');
     }
   }
 
@@ -196,6 +229,13 @@ function App() {
     if (!draftUser) return;
     setSavingUser(true);
     setError('');
+    if (dataMode === 'static') {
+      localStorage.setItem(staticUserKey, JSON.stringify(draftUser));
+      setUser(draftUser);
+      setSavingUser(false);
+      return;
+    }
+
     try {
       const payload = await request<{ user: User }>('/api/user', {
         method: 'PATCH',
@@ -204,7 +244,10 @@ function App() {
       setUser(payload.user);
       setDraftUser(payload.user);
     } catch (event) {
-      setError(event instanceof Error ? event.message : '保存用户信息失败');
+      localStorage.setItem(staticUserKey, JSON.stringify(draftUser));
+      setUser(draftUser);
+      setDataMode('static');
+      setError('后端暂不可用，用户信息已保存到当前浏览器。');
     } finally {
       setSavingUser(false);
     }
@@ -243,7 +286,7 @@ function App() {
           </div>
           <div>
             <p>Lexora</p>
-            <span>SQLite Powered IELTS</span>
+            <span>{dataMode === 'api' ? 'PostgreSQL Powered IELTS' : 'GitHub Pages IELTS'}</span>
           </div>
         </div>
 
@@ -333,6 +376,9 @@ function App() {
         </header>
 
         {error && <div className="notice">{error}</div>}
+        {dataMode === 'static' && !error && (
+          <div className="notice success-notice">当前为 GitHub Pages 静态模式，学习进度会保存在此浏览器中。</div>
+        )}
 
         <div className="tools-row">
           <label className="search-box">
@@ -459,6 +505,57 @@ function computeProgress(progress: Progress, correct: boolean): Progress {
     correct: right,
     lastSeen: new Date().toISOString(),
   };
+}
+
+async function loadStaticBootstrap(): Promise<BootstrapPayload> {
+  const [curated, expanded] = await Promise.all([
+    requestStaticWords('ielts_curated_words.json'),
+    requestStaticWords('ielts_5000_words.json'),
+  ]);
+  const progress = loadStaticProgress();
+  const seenWords = new Set<string>();
+  const words = [...curated, ...expanded]
+    .filter((word) => {
+      if (seenWords.has(word.word)) return false;
+      seenWords.add(word.word);
+      return true;
+    })
+    .map((word, index) => ({
+      ...word,
+      id: index + 1,
+      progress: progress[word.word] ?? emptyProgress,
+    }));
+
+  return { user: loadStaticUser(), words };
+}
+
+async function requestStaticWords(fileName: string): Promise<StaticWord[]> {
+  const response = await fetch(`${import.meta.env.BASE_URL}${fileName}`);
+  if (!response.ok) throw new Error(`Unable to load ${fileName}`);
+  return response.json() as Promise<StaticWord[]>;
+}
+
+function loadStaticUser(): User {
+  try {
+    const stored = localStorage.getItem(staticUserKey);
+    return stored ? { ...defaultUser, ...JSON.parse(stored) } : defaultUser;
+  } catch {
+    return defaultUser;
+  }
+}
+
+function loadStaticProgress(): ProgressMap {
+  try {
+    const stored = localStorage.getItem(staticProgressKey);
+    return stored ? (JSON.parse(stored) as ProgressMap) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveStaticProgress(word: string, progress: Progress) {
+  const current = loadStaticProgress();
+  localStorage.setItem(staticProgressKey, JSON.stringify({ ...current, [word]: progress }));
 }
 
 function Metric({ icon, label, value }: { icon: React.ReactNode; label: string; value: string | number }) {

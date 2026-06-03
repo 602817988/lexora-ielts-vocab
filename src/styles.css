@@ -331,6 +331,12 @@ h1 {
   background: rgba(255, 246, 242, 0.86);
 }
 
+.success-notice {
+  border-color: rgba(32, 108, 90, 0.2);
+  color: #245f51;
+  background: rgba(239, 249, 244, 0.88);
+}
+
 .loading-shell {
   grid-template-columns: 1fr;
   place-items: center;
